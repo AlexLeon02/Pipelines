@@ -1,0 +1,22 @@
+{
+	"name": "Parquet2SilverCustomer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "data_bc7767f2-9201-4862-8b00-586612a78511_6a65be01-725d-4a9c-aa61-60de44b2153b.parquet",
+				"folderPath": "Silver/2022/10",
+				"container": "pocsistemaarchivos"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
